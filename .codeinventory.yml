@@ -1,0 +1,14 @@
+name: Salesforce Lightning Components
+description: A collection of reusable Salesforce Lightning Components. Each directory contains a README describing the component, an independent package.xml, and relevant code/ resources.
+contact:
+  email: gsalabs@gsa.gov
+languages:
+  - javascript
+  - apex
+permissions:
+  licenses:
+    - URL: http://www.usa.gov/publicdomain/label/1.0/
+      name: PD
+  usageType: openSource
+repositoryURL: https://github.com/GSA/sf-lightning-components
+organization: GSA

@@ -1,0 +1,570 @@
+/* CSS contains a selected import of the USWDS which is applicable to the Official US Website banner. Where applicable, starting line numbers are included for your reference */ 
+.THIS .usa-grid, .THIS .usa-grid-full {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1040px;
+}
+
+.THIS .usa-grid::after,
+.THIS .usa-grid-full::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.THIS .usa-grid {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .THIS .usa-grid {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+.THIS .usa-grid-full {
+  padding: 0;
+}
+
+/* 520 */
+
+@media screen and (min-width: 600px) {
+  .THIS .usa-width-one-half {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%;
+  }
+  .THIS .usa-width-one-half:last-child {
+    margin-right: 0;
+  }
+  
+}
+
+/* 631 */
+@media screen and (min-width: 1201px) {
+  .THIS .usa-width-one-half {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .THIS .usa-width-one-half:last-child {
+    margin-right: 0;
+  }
+}
+
+/* 1932 */
+.THIS .usa-width-one-half:first-child > :first-child {
+  margin-top: 0;
+}
+/* 1983 */
+.THIS .usa-accordion,
+.THIS .usa-accordion-bordered {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+  color: #212121;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.THIS .usa-accordion > li,
+.THIS .usa-accordion-bordered > li {
+  margin-bottom: 0;
+}
+
+.THIS .usa-accordion > ul li ul,
+.THIS .usa-accordion-bordered > ul li ul {
+  list-style: disc;
+}
+
+.THIS .usa-accordion > ul li ul > li > ul,
+.THIS .usa-accordion-bordered > ul li ul > li > ul {
+  list-style: circle;
+}
+
+.THIS .usa-accordion > ul li ul > li > ul > li > ul,
+.THIS .usa-accordion-bordered > ul li ul > li > ul > li > ul {
+  list-style: square;
+}
+
+.THIS .usa-accordion + .usa-accordion,
+.THIS .usa-accordion + .usa-accordion-bordered,
+.THIS .usa-accordion-bordered + .usa-accordion,
+.THIS .usa-accordion-bordered + .usa-accordion-bordered {
+  margin-top: 1rem;
+}
+
+.THIS .usa-accordion > ul,
+.THIS .usa-accordion-bordered > ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+  color: #212121;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.THIS .usa-accordion > ul > li,
+.THIS .usa-accordion-bordered > ul > li {
+  margin-bottom: 0;
+}
+
+.THIS .usa-accordion > ul > li,
+.THIS .usa-accordion-bordered > ul > li {
+  background-color: #f1f1f1;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  list-style: none;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+.THIS .usa-accordion > ul button,
+.THIS .usa-accordion-bordered > ul button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  background-color: #f1f1f1;
+  background-image: url("../img/minus.png");
+  background-image: url("../img/minus.svg");
+  background-position: right 3rem center;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  color: #212121;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 1.5rem 5.5rem 1.5rem 3rem;
+  width: 100%;
+}
+
+.THIS .usa-accordion > ul button:hover,
+.THIS .usa-accordion-bordered > ul button:hover {
+  background-color: transparent;
+}
+
+.THIS .usa-accordion > ul button:focus,
+.THIS .usa-accordion-bordered > ul button:focus {
+  box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
+}
+
+.THIS .usa-accordion > ul button:hover,
+.THIS .usa-accordion-bordered > ul button:hover {
+  background-color: #d6d7d9;
+  color: #212121;
+}
+
+.THIS .usa-accordion > ul button h1,
+.THIS .usa-accordion > ul button h2,
+.THIS .usa-accordion > ul button h3,
+.THIS .usa-accordion > ul button h4,
+.THIS .usa-accordion > ul button h5,
+.THIS .usa-accordion > ul button h6,
+.THIS .usa-accordion-bordered > ul button h1,
+.THIS .usa-accordion-bordered > ul button h2,
+.THIS .usa-accordion-bordered > ul button h3,
+.THIS .usa-accordion-bordered > ul button h4,
+.THIS .usa-accordion-bordered > ul button h5,
+.THIS .usa-accordion-bordered > ul button h6 {
+  margin: 0;
+}
+
+.THIS .usa-accordion > ul [aria-expanded=false],
+.THIS .usa-accordion-bordered > ul [aria-expanded=false] {
+  background-image: url("../img/plus.png");
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+}
+
+.THIS .usa-accordion > li,
+.THIS .usa-accordion-bordered > li {
+  background-color: #f1f1f1;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  list-style: none;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+/* 2123 */
+.THIS .usa-accordion-bordered .usa-accordion-content {
+  border-bottom: 3px solid #f1f1f1;
+  border-left: 3px solid #f1f1f1;
+  border-right: 3px solid #f1f1f1;
+}
+
+.THIS .usa-accordion-content {
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 3rem;
+}
+
+.THIS .usa-accordion-content > *:first-child {
+  margin-top: 0;
+}
+
+.THIS .usa-accordion-content > *:last-child {
+  margin-bottom: 0;
+}
+
+.THIS .usa-accordion-content:not([aria-hidden]) {
+  position: absolute;
+  left: -999em;
+}
+
+.THIS .usa-accordion-content[aria-hidden=true] {
+  display: none;
+}
+
+/* 2152 */
+.THIS .usa-accordion-button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  background-color: #f1f1f1;
+  background-image: url("../img/minus.png");
+  background-image: url("../img/minus.svg");
+  background-position: right 3rem center;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  color: #212121;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 1.5rem 5.5rem 1.5rem 3rem;
+  width: 100%;
+}
+
+.THIS .usa-accordion-button:hover {
+  background-color: transparent;
+}
+
+.THIS .usa-accordion-button:focus {
+  box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
+}
+
+.THIS .usa-accordion-button:hover {
+  background-color: #d6d7d9;
+  color: #212121;
+}
+
+.THIS .usa-accordion-button h1,
+.THIS .usa-accordion-button h2,
+.THIS .usa-accordion-button h3,
+.THIS .usa-accordion-button h4,
+.THIS .usa-accordion-button h5,
+.THIS .usa-accordion-button h6 {
+  margin: 0;
+}
+
+.THIS .usa-accordion-button[aria-expanded=false] {
+  background-image: url("../img/plus.png");
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+}
+
+/* 2298 */
+.THIS .usa-banner {
+  background-color: #f1f1f1;
+  padding-bottom: 0.7rem;
+}
+
+@media screen and (min-width: 481px) {
+  .THIS .usa-banner {
+    font-size: 1.3rem;
+    padding-bottom: 0;
+  }
+}
+
+/* 2305 */
+.THIS .usa-banner-content {
+  padding-right: 1.5rem;
+  padding-bottom: 3px;
+  padding-left: 1.5rem;
+  background-color: transparent;
+  /* font-size: 1.5rem; */
+  padding-top: 2rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+ .THIS  .usa-banner-content {
+    padding-bottom: 2.3rem;
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 951px) {
+  .THIS .usa-banner-content {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+.THIS .usa-banner-content p:first-child {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .THIS .usa-banner-content p:first-child {
+    margin-top: 0;
+  }
+}
+
+/* 2339 */
+.THIS .usa-banner-inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  max-width: 1040px;
+}
+
+.THIS .usa-banner-inner::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+@media screen and (min-width: 951px) {
+  .THIS .usa-banner-inner {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+/* 2361 */
+.THIS .usa-banner-header {
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+  /* font-size: 1.2rem; */
+  font-weight: 400;
+}
+
+@media screen and (min-width: 481px) {
+  .THIS .usa-banner-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.THIS .usa-banner-header p {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 481px) {
+  .THIS .usa-banner-header p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: inline-block;
+    font-family: "Source Sans Pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  }
+}
+
+.THIS .usa-banner-header img {
+  float: left;
+  margin-right: 1rem;
+  margin-top: 1px;
+  width: 2.4rem;
+}
+
+@media screen and (min-width: 481px) {
+  .THIS .usa-banner-header img {
+    margin-right: 0.7rem;
+    width: 2rem;
+  }
+}
+
+/* 2461 */
+.THIS .usa-banner-button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  padding-top: 1.3rem;
+  padding-left: 4.8rem;
+  background-position-x: right;
+  color: #0071bc;
+  display: block;
+  /* font-size: 1.2rem; */
+  height: 4.3rem;
+  left: 0;
+  position: absolute;
+  text-decoration: underline;
+  top: 0;
+  width: 100%;
+}
+
+.THIS .usa-banner-button:hover {
+  background-color: transparent;
+}
+
+@media screen and (min-width: 481px) {
+  .THIS .usa-banner-button {
+    padding-top: 0;
+    padding-left: 0;
+    /* stylelint-disable declaration-block-no-ignored-properties */
+    display: inline;
+    height: initial;
+    margin-left: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: initial;
+    /* stylelint-enable */
+  }
+}
+
+.THIS .usa-banner-button:hover {
+  color: #205493;
+  text-decoration: underline;
+}
+
+.THIS .usa-banner-button[aria-expanded=false] {
+  background-image: none;
+}
+
+.THIS .usa-banner-button[aria-expanded=false]::after {
+  background-image: url(https://designsystem.digital.gov/assets/img/angle-arrow-down-primary.png);
+  background-image: url(https://designsystem.digital.gov/assets/img/angle-arrow-down-primary.svg);
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  /* stylelint-disable block-closing-brace-newline-after, at-rule-empty-line-before */
+  margin-left: 0;
+  /* stylelint-enable */
+}
+
+.THIS .usa-banner-button[aria-expanded=false]:hover::after {
+  background-image: url(https://designsystem.digital.gov/assets/img/angle-arrow-down-primary.png);
+  background-image: url(https://designsystem.digital.gov/assets/img/angle-arrow-down-primary.svg);
+}
+
+.THIS .usa-banner-button[aria-expanded=false]::after {
+  background-position-y: 1px;
+}
+
+.THIS .usa-banner-button[aria-expanded=true] {
+  background-image: none;
+  height: 5.6rem;
+}
+
+.THIS .usa-banner-button[aria-expanded=true]::after {
+  background-image: url(https://designsystem.digital.gov/assets/img/close.png);
+  background-image: url(https://designsystem.digital.gov/assets/img/close.svg);
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 1.3rem;
+  width: 1.3rem;
+  /* stylelint-disable block-closing-brace-newline-after, at-rule-empty-line-before */
+  margin-left: 0;
+  /* stylelint-enable */
+}
+
+@media screen and (min-width: 481px) {
+ .THIS  .usa-banner-button[aria-expanded=true] {
+    height: initial;
+    padding: 0;
+    position: relative;
+  }
+  .THIS .usa-banner-button[aria-expanded=true]::after {
+    background-image: url(https://designsystem.digital.gov/assets/img/angle-arrow-up-primary.png);
+    background-image: url(https://designsystem.digital.gov/assets/img/angle-arrow-up-primary.svg);
+    background-size: 100%;
+    content: '';
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    /* stylelint-disable block-closing-brace-newline-after, at-rule-empty-line-before */
+    margin-left: 0;
+    /* stylelint-enable */
+  }
+  .THIS .usa-banner-button[aria-expanded=true]:hover::after {
+    background-image: url(https://designsystem.digital.gov/assets/img/angle-arrow-up-primary-hover.png);
+    background-image: url(https://designsystem.digital.gov/assets/img/angle-arrow-up-primary-hover.svg);
+  }
+  .THIS .usa-banner-button[aria-expanded=true]::after {
+    background-position-y: 1px;
+  }
+}
+
+.THIS .usa-banner-button[aria-expanded=true]::after {
+  position: absolute;
+  right: 1.5rem;
+  top: 2.15rem;
+}
+
+@media screen and (min-width: 481px) {
+  .THIS .usa-banner-button[aria-expanded=true]::after {
+    position: static;
+  }
+}
+
+.THIS .usa-banner-button[aria-expanded=true] .usa-banner-button-text {
+  display: none;
+}
+
+@media screen and (min-width: 481px) {
+  .THIS .usa-banner-button[aria-expanded=true] .usa-banner-button-text {
+    display: inline;
+  }
+}
+
+.THIS .usa-banner-icon {
+  width: 3.8rem;
+}
+
+/* 3555 */
+.THIS .usa-media_block-img {
+  float: left;
+  margin-right: 1rem;
+}
+.THIS .usa-media_block-body {
+  overflow: hidden;
+}
+
+
+/* 
+ * SALESFORCE SPECIFIC OVERRIDES
+ */
+
+.THIS .usa-banner-header img {
+    width: 20px;
+}
