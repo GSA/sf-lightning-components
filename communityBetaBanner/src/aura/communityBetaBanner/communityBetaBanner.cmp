@@ -1,0 +1,44 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<aura:attribute name="label" type="String"/>
+    <aura:attribute name="message" type="String"/>
+    <aura:attribute name="stayUpToDateBoolean" type="boolean" />
+    <aura:attribute name="stayUpToDateMessage" type="String" />
+    <aura:attribute name="stayUpToDateHref" type="String" />
+    <aura:attribute name="stayUpToDateText" type="String" />
+    <aura:attribute name="backToHref" type="String" />
+    <aura:attribute name="backToLabel" type="String" />
+    
+<div class="slds-grid slds-grid_align-center">
+    <div class="slds-col slds-size_2-of-3">
+        <hr class="bannerBorder" />
+        <div class="bannerWrapper">
+            <p class="">
+                <span class="bannerLabel">{!v.label}</span> 
+            </p>
+            <div class="slds-grid">
+                <div class="slds-col slds-size_2-of-3">
+                    <p class="bannerMessage">{! v.message} 
+                        <aura:if isTrue="{! v.stayUpToDateBoolean }">
+                            {!v.stayUpToDateMessage}
+                            <a href="{!v.stayUpToDateHref}">  {! v.stayUpToDateText} </a>.
+                        </aura:if>
+                    </p>
+                </div>
+                <div class="slds-col slds-size_1-of-3">
+                    <div class="slds-align_absolute-center">
+                        <a href="{! v.backToHref }">
+	                        <lightning:button iconName="action:back" iconPosition="left" label="{!'Back to' + v.backToLabel }" />
+                        </a>
+                    </div>
+                </div>
+             </div>
+            
+
+        </div>
+        
+    </div>
+   
+    </div>    
+    
+    
+</aura:component>

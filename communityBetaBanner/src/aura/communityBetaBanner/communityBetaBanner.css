@@ -1,0 +1,21 @@
+.THIS {
+    background-color: white;
+}
+.THIS .bannerWrapper {
+    padding-top: .625em;
+    padding-bottom: .625em;
+}
+.THIS .bannerLabel {
+    font-weight: strong;
+    font-size: large;
+    padding-left: .3em;
+    padding-right: .3em;
+    background-color: gold;
+}
+.THIS .bannerMessage {
+    font-size: large;
+}
+.THIS .bannerBorder {
+    border-top: 8px solid gold;
+    margin: 0px;
+}
