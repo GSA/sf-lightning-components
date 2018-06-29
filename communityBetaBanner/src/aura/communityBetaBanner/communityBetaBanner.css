@@ -19,3 +19,9 @@
     border-top: 8px solid gold;
     margin: 0px;
 }
+
+@media only screen and (max-width: 1023px) {
+    .THIS .padding-small-size {
+         padding-top: .75rem;
+    }
+}
