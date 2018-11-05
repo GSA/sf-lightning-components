@@ -1,0 +1,39 @@
+<design:component label="Image Thumbnail Gallery">
+    <design:attribute name="dynamicWidthImages" default="false" label="Allow Dynamic Width?" description="Allows images to resize if less than four images are included in the configuration. For instance, if only two images are entered, the rendered images split the available space 50/50. Leaving this unchecked keeps the images at 1/4 width each" />
+
+	<design:attribute name="thumbImgName1" default="capital" label="Thumbnail Image Src 1" description="" required="true" />
+    <design:attribute name="imgName1" default="capital" label="Large Image Source 1" description="" required="true" />
+    <design:attribute name="name1" label="Name 1" default="Name" description="Name that will appear below the image" required="true" />
+    <design:attribute name="alternativeText1" label="AltText 1" default="altText" description="A short description of the image" required="true" />
+    <design:attribute name="credit1" default="image credit" label="Image Credit" description="Name of image owner" required="false" />
+    <design:attribute name="location1" default="Washington, DC" label="Image Location" description="City, State where image was taken" required="false" />
+    <design:attribute name="href1" default="/ContactUs" label="Image Link" description="Navigation URL" required="false" />
+    <design:attribute name="hrefTitle1" default="link title" />
+
+    <design:attribute name="thumbImgName2" default="" placeholder="Image Name" label="Thumbnail Image Src 2" description="" required="false" />
+    <design:attribute name="imgName2" default=""  placeholder="Image Name" label="Large Image Source 2" description="" required="false" />
+    <design:attribute name="name2" label="Name 2"  placeholder="Title of image" default="" description="Name that will appear below the image" required="false" />
+    <design:attribute name="alternativeText2" label="AltText 2" default="altText" description="A short description of the image" required="false" />
+    <design:attribute name="credit2" default="" label="Image Credit" description="Name of image owner" required="false" />
+    <design:attribute name="location2" default="" label="Image Location" description="City, State where image was taken" required="false" />
+    <design:attribute name="href2" default="" label="Image Link" description="Navigation URL" required="false" />
+    <design:attribute name="hrefTitle2" default="" />
+
+    <design:attribute name="thumbImgName3" default="" label="Thumbnail Image Src 3" description="" required="false" />
+    <design:attribute name="imgName3" default="" label="Large Image Source 3" description="" required="false" />
+    <design:attribute name="name3" label="Name 3" default="" description="Name that will appear below the image" required="false" />
+    <design:attribute name="alternativeText3" label="AltText 3" default="altText" description="A short description of the image" required="false" />
+    <design:attribute name="credit3" default="" label="Image Credit" description="Name of image owner" required="false" />
+    <design:attribute name="location3" default="" label="Image Location" description="City, State where image was taken" required="false" />
+    <design:attribute name="href3" default="" label="" description="Navigation URL" required="false" />
+    <design:attribute name="hrefTitle3" default="" />
+
+    <design:attribute name="thumbImgName4" default="" label="Thumbnail Image Src 4" description="" required="false" />
+    <design:attribute name="imgName4" default="" label="Large Image Source 4" description="" required="false" />
+    <design:attribute name="name4" label="Name 4" default="" description="Name that will appear below the image" required="false" />
+    <design:attribute name="alternativeText4" label="AltText 4" default="" description="A short description of the image" required="false" />
+    <design:attribute name="credit4" default="" label="Image Credit" description="Name of image owner" required="false" />
+    <design:attribute name="location4" default="" label="Image Location" description="City, State where image was taken" required="false" />
+    <design:attribute name="href4" default="" label="Image Link" description="Navigation URL" required="false" />
+    <design:attribute name="hrefTitle4" default="" />
+</design:component>

@@ -1,0 +1,12 @@
+<aura:documentation>
+	<aura:description>
+        <p>A <code>c:ImageThumbnailGallery</code> component provides content managers with a responsive strip of images. Upon clicking an image, users are presented a modal with a larger version of the image.</p>
+        <p></p>
+    </aura:description>
+    <aura:example name="ImageThumbnailGalleryExample" ref="c:ImageThumbnailGalleryExample" label="Basic Configuration">
+    	<p>An ImageThumbnailGallery with all four images entered.</p>
+    </aura:example>
+	<aura:example name="ImageThumbnailGallery3WideExample" ref="c:ImageThumbnailGallery3WideExample" label="3 wide with Dynamic Width Checked">
+    	<p>An ImageThumbnailGallery component with dynamicWidthImages checked. Doing so resizes the images to fit the full width of the section.</p>
+    </aura:example>
+</aura:documentation>
