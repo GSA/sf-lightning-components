@@ -1,0 +1,4 @@
+<design:component >
+  <design:attribute name="linkText" label="Text to display for link" />
+	<design:attribute name="reportId" label="Id of the Report" />
+</design:component>

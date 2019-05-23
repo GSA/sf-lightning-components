@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:attribute name="linkText" type="String" access="global"/>
+    <aura:attribute name="reportId" type="String" access="global"/>
+    <aura:attribute name="recordId" type="String" />
+
+    <article class="slds-card slds-p-top_medium">
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="slds-text-align_center slds-text-heading_medium">
+                <a href="{! '/lightning/r/Report/' + v.reportId +'/view?fv0=' + v.recordId}">{!v.linkText}</a>
+            </div>
+        </div>
+    </article>
+
+</aura:component>
