@@ -1,4 +1,6 @@
-<design:component >
-  <design:attribute name="linkText" label="Text to display for link" />
-	<design:attribute name="reportId" label="Id of the Report" />
+<design:component label="Record to Report Link">
+    <design:attribute name="linkText" label="Text to display for link" />
+    <design:attribute name="reportId" label="Id of the Report" />
+    <design:attribute name="iconName" label="Salesforce Icon to display" default="standard:report" />
+    <design:attribute name="iconAltText" label="Alt text for icon" default="Report Chart" />
 </design:component>
