@@ -1,5 +1,5 @@
 # Contributing
-We would love for this collection of components to grow. As such, we have some best practices that we'd like folks to follow so as to make it easier for consumers of these Lightning Components.
+
 
 ## New Components
 - Make a copy of the ..TEMPLATE folder which supplies the requisite folder and document structure.
@@ -13,3 +13,11 @@ cp -a ..TEMPLATE newComponentName
 ## Changes on Existing Components
 - File an issue describing the change
 - Submit pull request against issue
+
+## Practices and Conventions
+
+.design
+- Include a label in your design:component markup to provide users a plain language title. `<design:component label="Image Thumbnail Gallery">`
+
+.svg
+- Utilize a custom svg icon for the component

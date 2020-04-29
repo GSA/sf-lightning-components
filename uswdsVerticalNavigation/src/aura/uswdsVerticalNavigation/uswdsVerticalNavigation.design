@@ -1,0 +1,4 @@
+<design:component label="Vertical Navigation">
+	<design:attribute name="sectionTitle" default="" label="Section Header" required="false"></design:attribute>
+    <design:attribute name="navigationLinkSetId" default="Default_Navigation" label="Navigation Set Name" required="true"></design:attribute>
+</design:component>

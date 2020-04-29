@@ -1,5 +1,6 @@
 <design:component>
-	<design:attribute name="label" default="BETA" label="Label Text" description="Text that will appear in the label. Typically 'ALPHA' or 'BETA'" required="true" />
+    <design:attribute name="borderColor" default="gold" label="Border Color" description="Color of the BETA label and top border. Must be a valid hex value (#aabbcc) or color name" required="true"/>
+    <design:attribute name="label" default="BETA" label="Label Text" description="Text that will appear in the label. Typically 'ALPHA' or 'BETA'" required="true" />
     <design:attribute name="message" label="Message" default="Welcome to beta.disposal.gsa.gov. This site is under active development and not all site features may be available." description="Text to appear after the label." required="true" />
 	<design:attribute name="stayUpToDateBoolean" label="Display Stay Up to Date message?" default="false" />
     <design:attribute name="stayUpToDateMessage" label="Up to Date Message" default="You can stay up to date with our latest updates at" required="false" />
