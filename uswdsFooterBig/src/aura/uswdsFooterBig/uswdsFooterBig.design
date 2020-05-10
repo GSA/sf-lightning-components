@@ -1,0 +1,10 @@
+<design:component label="uswds Footer Big">
+    <design:attribute name="footerMenuNavigationLinkSetId" default="Default_Navigation" label="Main Footer Navigation Set Name" required="true"></design:attribute>
+    <design:attribute name="boilerplateLinkNavigationLinkSetId" default="Default_Navigation" label="Boilerplate Links Navigation Set Name" required="true"></design:attribute>
+    <design:attribute name="socialMediaNavigationLinkSetId" default="Default_Navigation" label="Social Media Navigation Set Name" required="true"></design:attribute>
+    <design:attribute name="agencyName" default="U.S. General Services Administration" label="Agency Name" required="true"></design:attribute>
+    <design:attribute name="agencyURL" default="https://gsa.gov" label="Agency Homepage URL" required="true"></design:attribute>
+    <design:attribute name="contactCenterName" default="Contact Us" label="Contact Center Name" required="true"></design:attribute>
+    <design:attribute name="contactEmail" default="" label="Contact Email Address" required="false"></design:attribute>
+    <design:attribute name="contactPhone" default="" label="Contact Phone Number" required="false"></design:attribute>
+</design:component>

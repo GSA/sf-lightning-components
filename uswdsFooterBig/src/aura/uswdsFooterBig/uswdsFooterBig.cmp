@@ -1,0 +1,74 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+  <aura:attribute name="footerMenuNavigationLinkSetId" type="String" description="Accepts navigationLinkSetId or Developer Name of the corresponding Navigation Menu. The main footer navigation section for the site. This component expects a multi-tiered menu. See documentation for more details." />
+  <aura:attribute name="boilerplateLinkNavigationLinkSetId" type="String" description="Accepts navigationLinkSetId or Developer Name of the corresponding Navigation Menu. Section of the footer to hold 'boilerplate' links such as Privacy Policy, Accessibility Standards, etc. Section expects a single tier, no sub-items, menu." />
+  <aura:attribute name="socialMediaNavigationLinkSetId" type="String" description="Accepts navigationLinkSetId or Developer Name of the corresponding Navigation Menu. Section to display various social media and other icons as links."/>
+  <aura:attribute name="agencyName" type="String" description="Name of agency or organization"/>
+  <aura:attribute name="agencyURL" type="String" description="URL to agency or organization home page." />
+  <aura:attribute name="contactCenterName" type="String" description="Name of contact center which supports this application or site. Defaults to 'Contact Us'." />
+  <aura:attribute name="contactEmail" type="String" description="[Optional] Email address for users to reach out to with questions/ comments." />
+  <aura:attribute name="contactPhone" type="String" description="[Optional] Phone Number for for users to reach out to with questions/ comments." />
+  <div class="usa-footer usa-footer--big">  
+  <div class="grid-container usa-footer__return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="usa-footer__primary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="tablet:grid-col-10">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <div class="grid-row grid-gap-4">
+                <!-- start iterating over the menu -->
+                    <c:uswdsFooterNavMenu navigationLinkSetId="{!v.footerMenuNavigationLinkSetId}"/>
+              		
+            </div>
+          </nav>
+        </div>
+        <div class="tablet:grid-col-2">
+            <nav class="usa-footer__nav" aria-label="Footer navigation" data-aura-rendered-by="264:0">
+          		<c:uswdsFooterNavMenuSmall navigationLinkSetId="{!v.boilerplateLinkNavigationLinkSetId}" alignment="Vertical" />
+            </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+          <div class="mobile-lg:grid-col-auto">
+              <a href="{!v.agencyURL}">
+                  <div class="logoContainer"></div>
+              </a>
+          </div>
+          <div class="mobile-lg:grid-col-auto">
+            <h3 class="usa-footer__logo-heading">{!v.agencyName}</h3>
+          </div>
+        </div>
+        <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+          <c:uswdsSocialMediaNavMenu navigationLinkSetId="{!v.socialMediaNavigationLinkSetId}" ></c:uswdsSocialMediaNavMenu>
+            
+          <h3 class="usa-footer__contact-heading">{!v.contactCenterName}</h3>
+          <address class="usa-footer__address">
+              <div class="usa-footer__contact-info grid-row grid-gap">
+              	<aura:if isTrue="{! not(empty(v.contactPhone))}" >
+              		<div class="grid-col-auto">
+                    	<a href="{!'tel:'+ v.contactPhone}">{!v.contactPhone}</a>
+                  	</div>
+                </aura:if>
+                <aura:if isTrue="{! and(not(empty(v.contactEmail)), not(empty(v.contactPhone)))}">
+                  |
+                </aura:if>
+           		  <aura:if isTrue="{! not(empty(v.contactEmail))}">
+              		<div class="grid-col-auto">
+                		<a href="{!'mailto:'+v.contactEmail}">{!v.contactEmail}</a>
+              		</div>
+                </aura:if>
+            </div>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</aura:component>

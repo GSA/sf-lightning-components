@@ -1,6 +1,11 @@
 <aura:documentation>
-	<aura:description>Documentation</aura:description>
-	<aura:example name="ExampleName" ref="exampleComponentName" label="Label">
-		Example Description
-	</aura:example>
+	<aura:description>
+        <p>A <code>c:uswdsUSABanner</code> component resides at the top of a community and informs users that the community is a genuine US Government website. </p>
+    
+    <h5>Other Requirements</h5>
+        <ul>
+        	<li>Page must load US Web Design System CSS and JS v2.5 or greater</li>
+        </ul>
+    </aura:description>
+    <aura:example name="uswdsUSABanner" ref="c:uswdsUSABanner" label="Code"><p>Code that renders the component.</p></aura:example>
 </aura:documentation>

@@ -1,0 +1,12 @@
+<aura:documentation>
+	<aura:description>
+    	<code>c:uswdsFooterBig</code> component is used to display a US Web Design System Big Footer as described at <a href="https://designsystem.digital.gov/components/footer/">https://designsystem.digital.gov/components/footer/</a>. The footer is comprised of multiple sub-components which must also be installed, see Dependencies. 
+        
+        For detailed examples, see <a href="https://github.com/GSA/sf-lightning-components/tree/master/uswdsFooterBig">https://github.com/GSA/sf-lightning-components/tree/master/uswdsFooterBig</a>
+        
+        <h5>Other Requirements</h5>
+        <ul>
+        	<li>Page must load US Web Design System CSS and JS v2.5 or greater</li>
+        </ul>
+    </aura:description>
+</aura:documentation>
