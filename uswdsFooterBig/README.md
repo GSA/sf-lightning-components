@@ -34,6 +34,12 @@ Component is used to display a US Web Design System Big Footer as described at [
 * If not already created, create an empty Lightning Token Bundle.
   * Developer Console > File > New > Lightning Tokens
   * Name it `defaultTokens`
+
+````apex
+<aura:tokens extends="forceCommunity:base">
+</aura:tokens>
+````
+
   * Save
 
 ## Installation Instructions
