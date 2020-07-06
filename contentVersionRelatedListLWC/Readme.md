@@ -1,7 +1,7 @@
 # Lightning Web Component for Content Version List
 
 This component was built to show the list of content versions for the content document object.
- ![Content Version Related List sample](contentversion.png)
+ ![Content Version Related List sample](contentversion.PNG)
 
 ## Installation Instructions
 
@@ -16,6 +16,6 @@ This component was built to show the list of content versions for the content do
 
 ## Usage Instructions 
 All the versions of the content document will be listed in this component as shown in the picture below.
-![Content Version Related List sample](contentversion_1.png)
+![Content Version Related List sample](contentversion_1.PNG)
 
 
