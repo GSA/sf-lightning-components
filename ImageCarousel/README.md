@@ -26,5 +26,5 @@ User can select a specific image as the primary image and user will have ability
 
 - Insert Conversion Version in Anonymous window
 
-![Config Menu](config4.png)
+![Config Menu](config4.PNG)
 
