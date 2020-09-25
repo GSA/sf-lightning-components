@@ -1,0 +1,55 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,forceCommunity:availableForAllPageTypes" access="global"
+  controller="FilesUploadUtility" >
+
+    <aura:attribute name="fullScreen" type="Boolean" default="false"/>
+    <aura:attribute name="animations" type="Boolean" default="true"/>
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="simpleRecord" type="Object"/>
+    <aura:attribute name="recordError" type="String"/>
+    <aura:attribute name="title" type="String" default="Marketing Name"/>
+    <aura:attribute name="slides" type="Object[]"/>
+    <aura:attribute  name="attachments" type="Object[]"  ></aura:attribute>
+    <aura:attribute  name="content" type="Object[]"></aura:attribute>
+    <aura:attribute  name="baseUrl" type="String"  ></aura:attribute>
+
+    <force:recordData aura:id="recordLoader"
+      recordId="{!v.recordId}"
+      fields="Marketing_Name__c,Address_1__c, City__c, State__c, Zip_Code__c, Property_Type__c, Disposal_Method__c, RealtySpecialityEmail__c, Last_Updated__c, Marketing_Statement_RTF__c, Bid_Link_Formula__c,Photo__c"
+      targetRecord="{!v.record}"
+      targetFields="{!v.simpleRecord}"
+      targetError="{!v.recordError}"
+      mode="VIEW"
+      />
+	  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <lightning:card iconName="utility:image" title="Picture Gallery">
+        <aura:set attribute="actions">
+            <aura:if isTrue="{!not(empty(v.attachments))||not(empty(v.content))||not(empty(v.simpleRecord.Photo__c))}"> 
+              <lightning:buttonIcon onclick="{!c.fullScreen}" size="large" iconName="utility:expand" />
+            </aura:if>
+        </aura:set>
+        <aura:if isTrue="{!not(empty(v.attachments))||not(empty(v.content))||not(empty(v.simpleRecord.Photo__c))}"> 
+            <c:PictureCarousel attachments="{!v.attachments}" content="{!v.content}" baseUrl="{!v.baseUrl}" photo="{!v.simpleRecord.Photo__c}"/>
+            <aura:set attribute="else">
+              <p style="text-align:center;padding-top:30%;font-size:14px;padding-left: 4%;">No Images Found for this property.</p>
+            </aura:set>
+        </aura:if>
+        
+        <aura:if isTrue="{!v.fullScreen==true}">
+            <div role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+
+                    <c:PictureCarousel attachments="{!v.attachments}" content="{!v.content}" baseUrl="{!v.baseUrl}" photo="{!v.simpleRecord.Photo__c}"/>
+                  }
+                </div>
+                
+                <div class="btn slds-modal__close close x-large">
+                    <lightning:buttonIcon variant="border-filled" onclick="{!c.closeDialog}" size="large" iconName="utility:close" />
+                </div>
+                
+            </div>
+            <div class="slds-backdrop slds-backdrop--open"></div>
+        </aura:if>
+    </lightning:card>
+
+</aura:component>

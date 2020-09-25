@@ -1,0 +1,43 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,forceCommunity:availableForAllPageTypes" access="global">
+
+    <aura:attribute name="slideIndex" type="Integer" default="0"/>
+    <aura:attribute name="slideWidth" type="Integer" default="0"/>
+    <aura:attribute  name="attachments" type="Object[]"  ></aura:attribute>
+    <aura:attribute  name="content" type="Object[]"></aura:attribute>
+    <aura:attribute  name="baseUrl" type="String"  ></aura:attribute>
+    <aura:attribute  name="photo" type="Object"  ></aura:attribute>
+    <aura:attribute  name="photoarray" type="Object[]"  ></aura:attribute>
+    <!--<aura:handler event="aura:doneRendering" action="{!c.doneRendering}"/>-->
+    <aura:handler  name="init" value="{!this}" action="{!c.doneRendering}"  ></aura:handler>
+
+    <div aura:id="gallery" class="gallery">
+        
+        <div class="filmstrip" style="{! 'margin-left: -' + (v.slideIndex * v.slideWidth) + 'px'}">
+             
+            <aura:iteration items="{!v.content}" var="con" indexVar="index">
+                <a href="{!con.downloadurl}" target="_blank">
+                    <div class="slide" style="{!'width:' + v.slideWidth + 'px;background-image:url(' + con.downloadurl + ')'}"/>
+                </a>
+            </aura:iteration> 
+            <aura:iteration items="{!v.attachments}" var="att" indexVar="index">
+                <a href="{!v.baseUrl+'/servlet/servlet.FileDownload?file='+att.Id }" target="_blank">
+                    <div class="slide" style="{!
+                    'width:' + v.slideWidth + 'px;background-image:url('+
+                     v.baseUrl+'/servlet/servlet.FileDownload?file='+att.Id+')'}"/>
+                </a>
+            </aura:iteration>
+             <aura:iteration items="{!v.photoarray}" var="photo" indexVar="index">
+                <a href="{!v.baseUrl+'/'+photo}" target="_blank">
+                    <div class="slide" style="{!'width:' + v.slideWidth + 'px;background-image:url('+v.baseUrl+'/'+photo+')'}"/>
+                </a>
+            </aura:iteration>
+        </div>
+        <div class="{! v.slideWidth>640 ? 'btn prev x-large' : 'btn prev'}">
+			<lightning:buttonIcon variant="border-filled" onclick="{!c.prev}" size="large" iconName="utility:chevronleft" />
+        </div>
+        <div class="{! v.slideWidth>640 ? 'btn next x-large' : 'btn next'}">
+			<lightning:buttonIcon variant="border-filled" onclick="{!c.next}" size="large" iconName="utility:chevronright" />
+        </div>
+    </div>
+        
+</aura:component>
