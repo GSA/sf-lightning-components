@@ -1,0 +1,17 @@
+<aura:component controller="FilesUploadUtility" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="downloadurl" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}" />
+    
+    <lightning:card footer="" title="Thumbnail" >
+        <aura:if isTrue="{!v.downloadurl !=''}">
+            <div class="element.style">
+       	<center>
+		               	<img src="{!v.downloadurl}"  id="{!v.recordId}" width="804" height="300"></img>
+		             </center></div>
+            <aura:set attribute="else">
+            <p>No First Image Available</p>
+            </aura:set>
+            </aura:if>
+    </lightning:card>
+</aura:component>
